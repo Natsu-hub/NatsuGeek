@@ -888,8 +888,8 @@ a:hover {
 .mainview__head {
   padding-left: 13px;
   padding-left: 0.8125rem;
-  font-size: 32px;
-  font-size: 2rem;
+  font-size: max(32px, 30px);
+  font-size: max(2rem, 30px);
   font-weight: 400;
   line-height: 1.1875;
   position: relative;
@@ -909,20 +909,21 @@ a:hover {
   height: 80px;
   height: 5rem;
   background-size: contain;
-  background: repeating-linear-gradient(-45deg, #B3D2F0, #B3D2F0 4px, #82B5E6 4px, #82B5E6 8px);
+  background: repeating-linear-gradient(-45deg, #B3D2F0, #B3D2F0 8px, transparent 8px, transparent 16px);
   border-radius: 50%;
 }
 @media screen and (min-width: 768px) {
   .mainview__head::before {
     width: 12.9375rem;
     height: 12.9375rem;
-    top: -0.625rem;
+    top: -1.875rem;
+    left: 1.3125rem;
   }
 }
 @media screen and (min-width: 768px) {
   .mainview__head {
     font-size: max(3.9375rem, 61px);
-    font-weight: 300;
+    font-weight: 400;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1230,6 +1231,7 @@ a:hover {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.05em;
+  font-family: "M PLUS 1", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .read__subtitle {
